@@ -2,39 +2,48 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="flex justify-between items-center px-10 py-5 bg-white/70 backdrop-blur-md sticky top-0 z-50 shadow-md">
+    <nav className="bg-white/80 backdrop-blur-md shadow-md">
 
-      <h1 className="text-2xl font-bold text-cyan-600">
-        Surya BS
-      </h1>
+      <div className="max-w-7xl mx-auto px-4 py-4">
 
-      <div className="flex gap-6 text-lg font-medium flex-wrap">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-center">
 
-        <Link to="/" className="hover:text-cyan-500">
-          About
-        </Link>
+          <h1 className="text-3xl font-bold text-cyan-600 text-center md:text-left mb-4 md:mb-0">
+            Surya BS
+          </h1>
 
-        <Link to="/education" className="hover:text-cyan-500">
-          Education
-        </Link>
+          <div className="flex flex-wrap justify-center gap-4 text-sm md:text-lg font-medium">
 
-        <Link to="/skills" className="hover:text-cyan-500">
-          Skills
-        </Link>
+            <Link to="/" className="hover:text-cyan-500">
+              About
+            </Link>
 
-        <Link to="/projects" className="hover:text-cyan-500">
-          Projects
-        </Link>
+            <Link to="/education" className="hover:text-cyan-500">
+              Education
+            </Link>
 
-        <Link to="/experience" className="hover:text-cyan-500">
-          Experience
-        </Link>
+            <Link to="/skills" className="hover:text-cyan-500">
+              Skills
+            </Link>
 
-        <Link to="/contact" className="hover:text-cyan-500">
-          Contact
-        </Link>
+            <Link to="/projects" className="hover:text-cyan-500">
+              Projects
+            </Link>
+
+            <Link to="/experience" className="hover:text-cyan-500">
+              Experience
+            </Link>
+
+            <Link to="/contact" className="hover:text-cyan-500">
+              Contact
+            </Link>
+
+          </div>
+
+        </div>
 
       </div>
+
     </nav>
   );
 }
