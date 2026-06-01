@@ -1,32 +1,102 @@
+import fetal from "../images/projects/fetal.png";
+import skin from "../images/projects/skin.png";
+import electro from "../images/projects/electro.png";
+
 function Projects() {
   return (
-    <div className="py-20 px-10">
+    <div className="py-20 px-8 md:px-20">
 
-      <h1 className="text-5xl font-bold text-cyan-600 mb-10">
+      <h1 className="text-5xl font-bold text-cyan-600 text-center mb-14">
         Projects
       </h1>
 
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-3 gap-8">
 
-        <div className="bg-white p-6 rounded-3xl shadow-xl">
-          <h2 className="text-2xl font-bold text-cyan-600">
-            Stock Prediction System
+        {/* Project 1 */}
+        <div className="bg-white shadow-xl rounded-3xl p-6 hover:scale-105 transition duration-300 border-l-8 border-cyan-500">
+
+          <img
+            src={fetal}
+            alt="Fetal Abnormalities Detection"
+            className="w-full h-48 object-cover rounded-2xl mb-4"
+          />
+
+          <h2 className="text-xl font-bold text-cyan-600">
+            Early Detection of Fetal Abnormalities
           </h2>
-          <p className="mt-3">
-            Built using RNN, LSTM and GRU.
+
+          <p className="mt-3 text-gray-700">
+            Built using KNN, K-Means, SVM and Random Forest algorithms.
           </p>
+
         </div>
 
-        <div className="bg-white p-6 rounded-3xl shadow-xl">
-          <h2 className="text-2xl font-bold text-cyan-600">
-            Electro Django Website
+        {/* Project 2 */}
+        <div className="bg-white shadow-xl rounded-3xl p-6 hover:scale-105 transition duration-300 border-l-8 border-cyan-500">
+
+          <img
+            src={skin}
+            alt="Hybrid CNN GNN"
+            className="w-full h-48 object-cover rounded-2xl mb-4"
+          />
+
+          <h2 className="text-xl font-bold text-cyan-600">
+            Hybrid CNN-GNN for Skin Lesion Analysis
           </h2>
-          <p className="mt-3">
-            Electronics booking web app.
+
+          <p className="mt-3 text-gray-700">
+            Developed using CNN (ResNet50) and GNN for skin cancer classification.
           </p>
+
+        </div>
+
+        {/* Project 3 */}
+        <div className="bg-white shadow-xl rounded-3xl p-6 hover:scale-105 transition duration-300 border-l-8 border-cyan-500">
+
+          <img
+            src={electro}
+            alt="Electro"
+            className="w-full h-48 object-cover rounded-2xl mb-4"
+          />
+
+          <h2 className="text-xl font-bold text-cyan-600">
+            Electro Repair Service Web App
+          </h2>
+
+          <p className="mt-3 text-gray-700">
+            Full-stack electronics repair service application using Django.
+          </p>
+
+        </div>
+
+        {/* Project 4 */}
+        <div className="bg-white shadow-xl rounded-3xl p-6 hover:scale-105 transition duration-300 border-l-8 border-cyan-500">
+
+          <h2 className="text-xl font-bold text-cyan-600">
+            Stock Prediction System
+          </h2>
+
+          <p className="mt-3 text-gray-700">
+            Stock market forecasting using RNN, LSTM and GRU models.
+          </p>
+
+        </div>
+
+        {/* Project 5 */}
+        <div className="bg-white shadow-xl rounded-3xl p-6 hover:scale-105 transition duration-300 border-l-8 border-cyan-500">
+
+          <h2 className="text-xl font-bold text-cyan-600">
+            Student Management System
+          </h2>
+
+          <p className="mt-3 text-gray-700">
+            Developed using JSP, Servlets and MySQL.
+          </p>
+
         </div>
 
       </div>
+
     </div>
   );
 }

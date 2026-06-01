@@ -7,8 +7,8 @@ function Contact() {
       </h1>
 
       <div className="bg-white p-8 rounded-3xl shadow-xl max-w-3xl">
-        <p>Email: yourmail@gmail.com</p>
-        <p>Phone: +91 XXXXX XXXXX</p>
+        <p>Email: suryabs7777@gmail.com</p>
+        <p>Phone: +91 7022574871</p>
         <p>Location: Bangalore, India</p>
       </div>
 

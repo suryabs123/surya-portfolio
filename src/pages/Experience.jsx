@@ -6,7 +6,7 @@ function Experience() {
         Experience
       </h1>
 
-      <div className="bg-white p-8 rounded-3xl shadow-xl max-w-4xl">
+      <div className="bg-white p-8 rounded-3xl shadow-xl max-w-4xl hover:scale-105 transition duration-300 border-l-8 border-cyan-500">
 
         <h2 className="text-2xl font-bold text-cyan-600">
           Teaching Assistant
@@ -28,6 +28,7 @@ function Experience() {
         </p>
 
       </div>
+
     </div>
   );
 }
