@@ -71,13 +71,17 @@ function Projects() {
 
         {/* Project 4 */}
         <div className="bg-white shadow-xl rounded-3xl p-6 hover:scale-105 transition duration-300 border-l-8 border-cyan-500">
-
+          <img
+            src={port}
+            alt="Port"
+            className="w-full h-48 object-cover rounded-2xl mb-4"
+          />
           <h2 className="text-xl font-bold text-cyan-600">
-            Stock Prediction System
+            Portfolio profile 
           </h2>
 
           <p className="mt-3 text-gray-700">
-            Stock market forecasting using RNN, LSTM and GRU models.
+            designed the portfolio profile of my own using jsx
           </p>
 
         </div>
