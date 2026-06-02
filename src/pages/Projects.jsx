@@ -1,8 +1,6 @@
 import fetal from "../images/projects/fetal.png";
 import skin from "../images/projects/skin.png";
 import electro from "../images/projects/electro.png";
-import port from "../images/projects/port.png";
-
 
 function Projects() {
   return (
@@ -28,8 +26,7 @@ function Projects() {
           </h2>
 
           <p className="mt-3 text-gray-700">
-            Built using KNN, K-Means, SVM and Random Forest algorithms for
-            early detection and classification of fetal abnormalities.
+            Built using KNN, K-Means, SVM and Random Forest algorithms.
           </p>
 
         </div>
@@ -48,8 +45,7 @@ function Projects() {
           </h2>
 
           <p className="mt-3 text-gray-700">
-            Developed using CNN (ResNet50) and GNN for skin cancer
-            classification and lesion topology analysis.
+            Developed using CNN (ResNet50) and GNN for skin cancer classification.
           </p>
 
         </div>
@@ -64,12 +60,11 @@ function Projects() {
           />
 
           <h2 className="text-xl font-bold text-cyan-600">
-            Electro Repair Service Web Application
+            Electro Repair Service Web App
           </h2>
 
           <p className="mt-3 text-gray-700">
-            Full-stack electronics repair service application developed
-            using Django Framework.
+            Full-stack electronics repair service application using Django.
           </p>
 
         </div>
@@ -77,19 +72,12 @@ function Projects() {
         {/* Project 4 */}
         <div className="bg-white shadow-xl rounded-3xl p-6 hover:scale-105 transition duration-300 border-l-8 border-cyan-500">
 
-          <img
-            src={port}
-            alt="Portfolio Website"
-            className="w-full h-48 object-cover rounded-2xl mb-4"
-          />
-
           <h2 className="text-xl font-bold text-cyan-600">
-            Personal Portfolio Website
+            Stock Prediction System
           </h2>
 
           <p className="mt-3 text-gray-700">
-            Designed and developed my personal portfolio website using
-            React, JSX, Tailwind CSS and deployed on Vercel.
+            Stock market forecasting using RNN, LSTM and GRU models.
           </p>
 
         </div>
@@ -97,15 +85,12 @@ function Projects() {
         {/* Project 5 */}
         <div className="bg-white shadow-xl rounded-3xl p-6 hover:scale-105 transition duration-300 border-l-8 border-cyan-500">
 
-          
-
           <h2 className="text-xl font-bold text-cyan-600">
             Student Management System
           </h2>
 
           <p className="mt-3 text-gray-700">
-            Developed using JSP, Servlets and MySQL for managing student
-            records, attendance and academic information.
+            Developed using JSP, Servlets and MySQL.
           </p>
 
         </div>
