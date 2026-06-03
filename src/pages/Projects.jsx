@@ -2,7 +2,6 @@ import fetal from "../images/projects/fetal.png";
 import skin from "../images/projects/skin.png";
 import electro from "../images/projects/electro.png";
 import port from "../images/projects/port.png";
-import student from "../images/projects/student.png";
 
 function Projects() {
   return (
@@ -96,12 +95,6 @@ function Projects() {
 
         {/* Project 5 */}
         <div className="bg-white shadow-xl rounded-3xl p-6 hover:scale-105 transition duration-300 border-l-8 border-cyan-500">
-
-          <img
-            src={student}
-            alt="Student Management System"
-            className="w-full h-48 object-cover rounded-2xl mb-4"
-          />
 
           <h2 className="text-xl font-bold text-cyan-600">
             Student Management System
