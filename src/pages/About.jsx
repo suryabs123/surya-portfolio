@@ -1,6 +1,8 @@
+
 import surya from "../images/surya.png";
 import { motion } from "framer-motion";
 import {
+  FaYoutube,
   FaLinkedin,
   FaGithub,
   FaInstagram,
@@ -10,38 +12,29 @@ import {
 function About() {
   return (
     <div className="min-h-screen flex items-center justify-center px-6 py-16">
-
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         className="max-w-7xl grid md:grid-cols-2 gap-12 items-center"
       >
-
         {/* Profile Image */}
         <div className="text-center">
-
           <img
             src={surya}
             alt="Surya BS"
             className="w-64 h-64 md:w-80 md:h-80 rounded-full border-4 border-cyan-500 object-cover mx-auto shadow-2xl hover:scale-105 transition duration-300"
           />
-
         </div>
 
         {/* About Content */}
         <div>
-
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            Hi, I'm{" "}
-            <span className="text-cyan-600">
-              Surya BS
-            </span>
+            Hi, I'm <span className="text-cyan-600">Surya BS</span>
           </h1>
 
           <p className="text-lg md:text-2xl text-gray-700 mb-6">
-            Computer Science Engineer | AI Enthusiast |
-            Web Developer
+            Computer Science Engineer | AI Enthusiast | Web Developer
           </p>
 
           <h2 className="text-3xl font-bold text-cyan-600 mb-4">
@@ -49,24 +42,27 @@ function About() {
           </h2>
 
           <p className="text-lg text-gray-700 leading-8">
-            I am a Computer Science Engineering graduate passionate
-            about Artificial Intelligence, Web Development,
-            IoT, and Teaching.
+            I am a Computer Science Engineering graduate passionate about
+            Artificial Intelligence, Web Development, IoT, and Teaching.
 
-            I have worked on projects such as Stock Prediction
-            using RNN, LSTM, and GRU, Django Web Applications,
-            Smart Energy Meter Systems, and Student Management Systems.
+            <br /><br />
+
+            I have worked on projects such as Stock Prediction using
+            RNN, LSTM, and GRU, Django Web Applications, Smart Energy Meter
+            Systems, and Student Management Systems.
+
+            <br /><br />
 
             Currently, I am working as a Teaching Assistant at
-            Cambridge Institute of Technology and enjoy helping
-            students understand technical concepts.
+            Cambridge Institute of Technology and enjoy helping students
+            understand technical concepts.
           </p>
 
           {/* Resume Button */}
           <a
             href="/resume.pdf"
             download
-            className="inline-flex items-center gap-2 mt-8 bg-cyan-500 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-cyan-600 hover:scale-105 transition"
+            className="inline-flex items-center gap-2 mt-8 bg-cyan-500 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-cyan-600 hover:scale-105 transition duration-300"
           >
             <FaDownload />
             Download Resume
@@ -75,38 +71,48 @@ function About() {
           {/* Social Icons */}
           <div className="flex gap-6 mt-8 text-4xl">
 
+            {/* YouTube */}
             <a
-              href="https://linkedin.com"
+              href="https://www.youtube.com/@itz_surya07"
               target="_blank"
               rel="noreferrer"
             >
-              <FaLinkedin className="text-blue-600 hover:scale-110 transition" />
+              <FaYoutube className="text-red-600 hover:scale-110 transition duration-300" />
             </a>
 
+            {/* LinkedIn */}
             <a
-              href="https://github.com"
+              href="https://www.linkedin.com/"
               target="_blank"
               rel="noreferrer"
             >
-              <FaGithub className="text-gray-800 hover:scale-110 transition" />
+              <FaLinkedin className="text-blue-600 hover:scale-110 transition duration-300" />
             </a>
 
+            {/* GitHub */}
             <a
-              href="https://instagram.com"
+              href="https://github.com/suryabs123"
               target="_blank"
               rel="noreferrer"
             >
-              <FaInstagram className="text-pink-500 hover:scale-110 transition" />
+              <FaGithub className="text-gray-800 hover:scale-110 transition duration-300" />
+            </a>
+
+            {/* Instagram */}
+            <a
+              href="https://www.instagram.com/surya_gowda07?utm_source=qr&igsh=MW51amJuZDdjZzg4Mg=="
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaInstagram className="text-pink-500 hover:scale-110 transition duration-300" />
             </a>
 
           </div>
-
         </div>
-
       </motion.div>
-
     </div>
   );
 }
 
 export default About;
+
